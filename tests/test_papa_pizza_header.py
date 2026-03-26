@@ -7,13 +7,13 @@ import pytest
 import requests
 from pages.page_main import LoginPage
 
-@allure.id("006")
+@allure.id("001")
 @allure.label("Papa pizza")
 @allure.title("Papa pizza проверка шапки")
 @allure.description("Тест проверяет что все кнопки нажимаются и перекидывают во вкладки в шапке")
 @pytest.mark.papa_pizza
 
-def tests_006(driver):
+def tests_001(driver):
     login = LoginPage(driver)
     with allure.step("Открываем сайт Papa pizza"):
         login.open()

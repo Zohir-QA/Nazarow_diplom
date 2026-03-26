@@ -5,15 +5,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 import pytest
 import requests
-from pages.page_papa_pizza.page_main import LoginPage
+from pages.page_main import LoginPage
 
-@allure.id("007")
+@allure.id("002")
 @allure.label("Papa pizza")
 @allure.title("Papa pizza проверка изображения")
 @allure.description("Тест проверяет изображения на главной странице, что оно отсылает на начальную страницу")
 @pytest.mark.papa_pizza
 
-def tests_007(driver):
+def tests_002(driver):
     login = LoginPage(driver)
     with allure.step("Открываем сайт Papa pizza"):
         login.open()

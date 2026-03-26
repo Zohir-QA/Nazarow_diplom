@@ -60,3 +60,20 @@ class LoginPage(BasePage):
     def wait_drinks_header(self):
         return self.wait_element(self.locators.DRINKS_HEADER)
 
+    def click_hot_snacks_navbar(self):
+        self.click(self.locators.HOT_SNACKS_NAVBAR)
+
+    def wait_hot_snacks_header(self):
+        return self.wait_element(self.locators.HOT_SNACKS_HEADER)
+
+    def click_combo_navbar(self):
+        self.click(self.locators.COMBO_NAVBAR)
+
+    def wait_combo_header(self):
+        return self.wait_element(self.locators.COMBO_HEADER)
+
+    def click_pizza_sauces_navbar(self):
+        self.click(self.locators.PIZZA_SAUCES_NAVBAR)
+
+    def wait_pizza_sauces_header(self):
+        return self.wait_element(self.locators.PIZZA_SAUCES_HEADER)

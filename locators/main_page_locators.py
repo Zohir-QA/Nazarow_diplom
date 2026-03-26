@@ -15,4 +15,13 @@ class MainPageLocators:
     MAIN_TITLE = (By.XPATH, '//h1[@class="home_h1"]') # Заголовок на главной
     DRINKS_BUTTON_NAVBAR = (By.XPATH, '//a[@href="http://papapizza59.ru/napitki/" and not(@rel="nofollow") and not(@class="list-group-item")]') # Категория напитки
     DRINKS_HEADER = (By.XPATH, '//h1 [text()="Напитки"]') # Заголовок на вкладке напитки
+    HOT_SNACKS_NAVBAR = (By.XPATH, '//a[@href="http://papapizza59.ru/goryachie_zakuski/" and not(@rel="nofollow") and not(@class="list-group-item")]') # Категория горячих закусок
+    HOT_SNACKS_HEADER = (By.XPATH, '//h1[text()="Горячие закуски"]') # Заголовок на вкладке горячие закуски
+    COMBO_NAVBAR = (By.XPATH, '//a[@href="http://papapizza59.ru/kombo/" and not(@rel="nofollow") and not(@class="list-group-item")]') # Категория комбо
+    COMBO_HEADER = (By.XPATH, '//h1[text() = "Заказать выгодное комбо из пицц — доставка в Перми"]') # Заголовок на вкладке горячие комбо
+    PIZZA_SAUCES_NAVBAR = (By.XPATH, '//a[@href="http://papapizza59.ru/sousy_k_picce/" and not(@rel="nofollow") and not(@class="list-group-item")]') # Категория соусы к пицце
+    PIZZA_SAUCES_HEADER = (By.XPATH, '//h1[text() = "Соусы к пицце"]') # Заголовок на вкладке горячие комбо
+
+
+
 
