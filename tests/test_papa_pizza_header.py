@@ -1,16 +1,11 @@
-import time
 import allure
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
 import pytest
-import requests
 from pages.page_main import LoginPage
 
 @allure.id("001")
 @allure.label("Papa pizza")
-@allure.title("Papa pizza проверка шапки")
-@allure.description("Тест проверяет что все кнопки нажимаются и перекидывают во вкладки в шапке")
+@allure.title("Papa pizza проверка шапки сайта")
+@allure.description("Тест проверяет что пользователь может перемещаться корректно в шапке сайта")
 @pytest.mark.papa_pizza
 
 def tests_001(driver):
@@ -31,7 +26,7 @@ def tests_001(driver):
         login.click_delivery_terms()
 
     with allure.step('Проверяем что вкладке "Условия доставки" успешно открыта'):
-        assert login.wait_delivery(), "ОШИБКА не перешел по вкладке условия доставки"
+        assert login.wait_delivery_header(), "ОШИБКА не перешел по вкладке условия доставки"
 
     with allure.step('Кликнуть на кнопку "Оплата"'):
         login.click_payment()

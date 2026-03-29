@@ -1,10 +1,5 @@
-import time
 import allure
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
 import pytest
-import requests
 from pages.page_main import LoginPage
 
 @allure.id("003")
@@ -48,8 +43,8 @@ def tests_003(driver):
     with allure.step('Кликнуть в навигационном меню на кнопку "Соусы к пицце"'):
         login.click_pizza_sauces_navbar()
 
-    # with allure.step('Проверяем что мы во вкладке "Соусы к пицце"'):
-    #     assert login.wait_combo_header(), "ОШИБКА не перешел по вкладке cоусы к пицце"
+    with allure.step('Проверяем что мы во вкладке "Соусы к пицце"'):
+        assert login.wait_pizza_sauces_header(), "ОШИБКА не перешел по cоусы к пицце"
 
 
 

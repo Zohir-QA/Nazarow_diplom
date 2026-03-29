@@ -1,16 +1,7 @@
 from pages.base_page import BasePage
-from selenium.webdriver.common.by import By
 from locators.main_page_locators import MainPageLocators
 
 class LoginPage(BasePage):
-    # URL = "http://papapizza59.ru/"
-    # MODAL_WINDOW = (By.XPATH, '//a[@class="popup-modal-dismiss"]')
-    # USLOVIYA_DOSTAVKI = (By.XPATH, '//a[text() = "Условия доставки"and not(@rel="nofollow")]')
-    # AKTSII = (By.XPATH, '//a[@href="http://papapizza59.ru/nashi_akcii" and not(@rel="nofollow")]')
-    # OPLATA = (By.XPATH, '//div[contains(@class, "top-links")]//a[@href="http://papapizza59.ru/oplata"]')
-    # NASHI_AKTSII = (By.XPATH, '//h1[text() = "Наши акции"]')
-    # DOSTAVKA = (By.XPATH, '//h1[text() = "Доставка"]')
-    # ZAGOLOVOK_OPLATY = (By.XPATH, '//h1[text() = "Оплата"]')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -36,8 +27,8 @@ class LoginPage(BasePage):
     def wait_our_promotions(self):
         return self.wait_element(self.locators.OUR_PROMOTIONS)
 
-    def wait_delivery(self):
-        return self.wait_element(self.locators.DELIVERY)
+    def wait_delivery_header(self):
+        return self.wait_element(self.locators.DELIVERY_HEADER)
 
     def wait_payment_header(self):
         return self.wait_element(self.locators.PAYMENT_HEADER)
@@ -77,3 +68,48 @@ class LoginPage(BasePage):
 
     def wait_pizza_sauces_header(self):
         return self.wait_element(self.locators.PIZZA_SAUCES_HEADER)
+
+    def scroll_caption_product(self):
+        self.scroll_element(self.locators.CAPTION_PRODUCT)
+
+    def click_caption_product(self):
+        self.click(self.locators.CAPTION_PRODUCT)
+
+    def click_size_l_button(self):
+        self.click(self.locators.SIZE_L_BUTTON)
+
+    def scroll_cart_button(self):
+        self.scroll_element(self.locators.CART_BUTTON)
+
+    def click_cart_button(self):
+        self.click(self.locators.CART_BUTTON)
+
+    def click_place_order_button(self):
+        self.click(self.locators.PLACE_ORDER_BUTTON)
+
+    def wait_buyer_form_title(self):
+        return self.wait_element(self.locators.BUYER_FORM_TITLE)
+
+    def click_pizzeria_button(self):
+        self.click(self.locators.PIZZERIA_BUTTON)
+
+    def wait_pizzeria_header(self):
+        return self.wait_element(self.locators.PIZZERIA_HEADER)
+
+    def click_free_shipping_conditions_button(self):
+        self.click(self.locators.FREE_SHIPPING_CONDITIONS_BUTTON)
+
+    def click_payment_button_footer(self):
+        self.click(self.locators.PAYMENT_BUTTON_FOOTER)
+
+    def click_privacy_policy_button(self):
+        self.click(self.locators.PRIVACY_POLICY_BUTTON)
+
+    def wait_privacy_policy_header(self):
+        return self.wait_element(self.locators.PRIVACY_POLICY_HEADER)
+
+    def click_public_offer_button(self):
+        self.click(self.locators.PUBLIC_OFFER_BUTTON)
+
+    def wait_offer_header(self):
+        return self.wait_element(self.locators.OFFER_HEADER)
