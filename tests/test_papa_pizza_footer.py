@@ -7,6 +7,7 @@ from pages.page_main import LoginPage
 @allure.title("Papa pizza проверка подвала сайта")
 @allure.description("Тест проверяет что пользователь проходит до карточки товара и добавляет в корзину")
 @pytest.mark.papa_pizza
+@pytest.mark.parametrize("driver", ["edge", "chrome"], indirect=True)
 
 def tests_005(driver):
     login = LoginPage(driver)
