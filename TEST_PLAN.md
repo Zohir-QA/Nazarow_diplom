@@ -69,6 +69,6 @@
 ---
 
 ## 6. АРТЕФАКТЫ
-- **Итоговый отчёт:** https://github.com/Zohir-QA/Nazarow_diplom
+- **Итоговый отчёт:** [FINAL_REPORT.md](FINAL_REPORT.md)
 - **Чек-лист, тест-кейсы и баг-репорты:** [testing_papa_pizza.xlsx](testing_papa_pizza.xlsx)
 
