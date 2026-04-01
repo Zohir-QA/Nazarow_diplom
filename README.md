@@ -20,6 +20,9 @@
 autotest_project/
 │
 │
+├── allure-results/                     # Результаты тестов для Allure
+│
+│
 ├── checklist_&_test_case_&_bug_report/ # Документация тестирования
 │   └── testing_papa_pizza.xlsx         # Чек-листы, тест-кейсы, баг-репорты
 │
@@ -28,12 +31,12 @@ autotest_project/
 │   └── main_page_locators.py           # Локаторы главной страницы
 │
 │
-├── pages/                   #     Page Object — классы страниц
-│   ├── base_page.py         #     Базовый класс (общие методы для всех страниц)
-│   └── main_page.py         #     Главная страница (после логина)
+├── pages/                              # Page Object — классы страниц
+│   ├── base_page.py                    # Базовый класс (общие методы для всех страниц)
+│   └── main_page.py                    # Главная страница (после логина)
 │
 │
-├── tests/                   #   Тесты
+├── tests/                              # Тесты
 │   ├── test_papa_pizza_footer.py       # Тесты футера
 │   ├── test_papa_pizza_header.py       # Тесты хедера
 │   ├── test_papa_pizza_lmade.py        # Тесты логотипа
@@ -41,8 +44,11 @@ autotest_project/
 │   └── test_papa_pizza_product_card.py # Тесты карточки товара
 │
 │
-├── conftest.py              #     Корневой conftest (общие фикстуры). В нем открывается браузер
-└── requirements.txt         #     Зависимости (pip install -r requirements.txt)
+├── conftest.py                         # Корневой conftest (общие фикстуры). В нем открывается браузер
+├── FINAL_REPORT.md                     # Итоговый отчет
+├── README.md                           # Описание проекта
+├── requirements.txt                    # Зависимости (pip install -r requirements.txt)
+└── TEST_PLAN.md                        # План тестирования
 ```
 
 ---
