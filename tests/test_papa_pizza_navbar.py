@@ -47,6 +47,8 @@ def tests_003(driver):
     with allure.step('Проверяем что мы во вкладке "Соусы к пицце"'):
         assert login.wait_pizza_sauces_header(), "ОШИБКА не перешел по cоусы к пицце"
 
+    login.take_screenshot('Страница "Соусы к пицце"')
+
 
 
 

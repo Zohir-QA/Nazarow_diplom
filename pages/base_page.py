@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import  expected_conditions as EC
 
@@ -25,4 +26,8 @@ class BasePage:
     def scroll_footer(self):
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         return self
+
+    def take_screenshot(self, text):
+        allure.attach(self.driver.get_screenshot_as_png(),
+                      name=text, attachment_type=allure.attachment_type.PNG)
 

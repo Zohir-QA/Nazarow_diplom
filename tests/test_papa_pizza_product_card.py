@@ -6,7 +6,6 @@ from pages.page_main import LoginPage
 @allure.label("Papa pizza")
 @allure.title("Papa pizza проверка карточки товара")
 @allure.description("Тест проверяет что пользователь может перемещаться корректно по подвалу")
-@pytest.mark.papa_pizza
 @pytest.mark.parametrize("driver", ["edge", "chrome"], indirect=True)
 
 def tests_004(driver):
@@ -37,3 +36,5 @@ def tests_004(driver):
 
     with allure.step('Проверяем что заказ добавился в корзину'):
         assert login.wait_buyer_form_title(), "ОШИБКА заказ не добавился в корзину"
+
+    login.take_screenshot('Страница "Оформление заказа"')

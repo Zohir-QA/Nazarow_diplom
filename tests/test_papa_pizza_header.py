@@ -34,3 +34,5 @@ def tests_001(driver):
 
     with allure.step('Проверяем что вкладке "Оплата" успешно открыта'):
         assert login.wait_payment_header(), "ОШИБКА не перешел по вкладке оплата"
+
+    login.take_screenshot('Страница "Оплаты"')

@@ -61,3 +61,5 @@ def tests_005(driver):
 
     with allure.step('Проверяем что мы во вкладке "Оферта'):
         assert login.wait_offer_header(), "ОШИБКА не перешел по вкладке оферта"
+
+    login.take_screenshot('Страница "Оферты"')
