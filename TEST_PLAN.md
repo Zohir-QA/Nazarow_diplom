@@ -55,7 +55,7 @@
 | Язык программирования | Python 3.x |
 | Фреймворк | pytest |
 | Библиотека автоматизации | Selenium WebDriver |
-| Браузеры | Chrome, Edge, Яндекс.Браузер |
+| Браузеры | Chrome, Edge |
 | Система контроля версий | Git + GitHub |
 | Генерация отчетов | Allure Report |
 
